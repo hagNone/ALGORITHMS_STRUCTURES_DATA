@@ -179,7 +179,7 @@ class arrays:
                 left +=1
 
             else:
-                if height[right] >= height[left]
+                if height[right] >= height[left]:
                     right_max=height[right]
                 else:
                     total_water += right_max - height[right]
@@ -279,12 +279,20 @@ class arrays:
                 transposed[j][i]=matrix[i][j]
         return transposed   
 
+    # Gas station
+    def canCompleteCircuit(self, gas, cost):
+        if sum(gas)<sum(cost):
+            return -1
+        
+        total=0
+        start=0
+
+        for i in range(len(gas)):
+            total+=gas[i]-cost[i]
+
+            if total<0:
+                total=0
+                start=i+1
+        return start    
     
-    
-
-    
-
-
-     
-
     
