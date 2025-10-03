@@ -293,4 +293,9 @@ class Solution:
                     max_length=max(max_length,i-stack[-1])
         return max_length
     
+    # reverse words in a string
+    def reverseWords(self, s: str) -> str:
+        words = s.split()
+        return ' '.join(reversed(words))
+    
     

@@ -22,7 +22,7 @@ class arrays:
                 max_profit=profit
         return max_profit
     
-    #find duplicate in an arrau
+    #find duplicate in an array
     def findduplicate(self,nums):
         seen=set()
         numi=[]
